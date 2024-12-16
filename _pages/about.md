@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Vanderbilt University</a> \:\ Pushing boundaries through precision, innovation, and computational excellence to shape the future of aerospace.
+subtitle: <a href='#'>Vanderbilt University</a>. Pushing boundaries through precision, innovation, and computational excellence to shape the future of aerospace.
 
 profile:
   align: right
