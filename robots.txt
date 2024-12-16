@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://Kun-Qiu.github.io/sitemap.xml
