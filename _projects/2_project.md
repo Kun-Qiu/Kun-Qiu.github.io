@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: 2D Molecular Tagging Velocimetry
+description: Two Frame Velocity Approximation 
+img: assets/img/MTV_2D_Grid.png
 importance: 2
-category: work
+category: Research
 giscus_comments: true
 ---
 
