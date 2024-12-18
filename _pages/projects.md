@@ -2,10 +2,10 @@
 layout: page
 title: projects
 permalink: /projects/
-description: A growing collection of your cool projects.
+description: An engineering portfolio packed with innovation, creativity, and just the right amount of overthinking—because perfection is never optional in the world of equations and prototypes!
 nav: true
 nav_order: 3
-display_categories: [Research, Fun]
+display_categories: [Academic, Fun]
 horizontal: false
 ---
 

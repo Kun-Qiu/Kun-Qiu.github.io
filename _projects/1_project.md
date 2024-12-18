@@ -1,10 +1,10 @@
 ---
 layout: page
 title: 3D Molecular Tagging Velocimetry
-description: Polynomial Calibration Based 3D Reconstruction
+description: Polynomial calibration based 3D velocity field reconstruction
 img: assets/img/stereo_img.png
 importance: 1
-category: Research
+category: Academic
 related_publications: false
 ---
 
