@@ -8,7 +8,7 @@ category: Academic
 giscus_comments: false
 ---
 
-Problem Statement:
+### Problem Statement:
 Given a 2D image of a laser sheet captured, accurately capture the coordinate of the intersections. From a pair of
 2D images, resolve the correspondence problem between the intersections from each image and produce a 2D velocity
 field.
@@ -30,6 +30,8 @@ of detecting the intersection, it lacks versatility in that if the image is rota
 the intersections. Therefore, a roboust method is being investigated to improve detection task for varying magnification images
 resulting from stereoscopic imaging setups.
 
+### Experiment
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/SNR_1.png" title="Hough Transform" class="img-fluid rounded z-depth-1" %}
@@ -44,10 +46,6 @@ the template matching. Even in signal to noise ratio (SNR) of 1, the Hough line 
 limitation of the method is equally prevalent in that the algorithm in not well suited if there exist curvatures in the lines within
 the image. Since the magnification factor will vary across the spatial domain of the image, template will be created for each intersection and the templates will be sequentially mapped to the displaced image to find region of interest. The assumptions made for this combination of Hough line transform and template matching will only work if the displacement in 2D and 3D is much smaller than the distance between any two adjacent intersetion points. 
 
-{% raw %}
+### Work in Progress
 
-```html
 This project is still work in progress. Will be updated as more progress is made.
-```
-
-{% endraw %}

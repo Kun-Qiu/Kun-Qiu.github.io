@@ -1,80 +1,98 @@
 ---
 layout: page
-title: project 5
-description: a project with a background image
-img: assets/img/1.jpg
-importance: 3
-category: fun
+title: Wheel Chair Lift Design
+description: Using linkages, design a wheel chair lift under a set of physical constraints  
+img: assets/img/WheelChair_Lift.jpg
+importance: 4
+category: Academic
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+The "Chairway to Heaven" project aims to solve a significant accessibility challenge: designing a wheelchair lift that allows seamless vertical movement in residential garages with a height difference of one meter. This project explores the innovative approach used to create a compact, efficient, and user-friendly lift solution.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+### The Design Vision
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+The project team sought to create a lift mechanism that is both space-efficient and compliant with Federal ADA regulations. By focusing on simplicity and functionality, we developed a multi-scissor linkage lift that optimizes vertical displacement while maintaining a minimal footprint. Key specifications include supporting a 300-pound load and ensuring smooth operation within 10 seconds for a one-meter elevation.
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/lift_design.png" title="Lift Design" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    The conceptual design of the lift.
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+### Why a Multi-Scissor Linkage?
+The multi-scissor linkage design was chosen for its compactness and scalability. By stacking scissor mechanisms, the design doubles vertical displacement without increasing the overall size. This innovative setup ensures:
 
-{% raw %}
+<ul>
+    <li><strong>Smooth Translation:</strong> The design ensures a horizontal platform throughout its motion.</li>
+    <li><strong>Compact Footprint:</strong> Ideal for tight residential spaces.</li>
+    <li><strong>Efficiency:</strong> Less force is required for equivalent elevation compared to traditional designs.</li>
+</ul>
 
-```html
+### Prototyping 
+
 <div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/chair_side.png" title="Side View" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/chair_front.png" title="Front View" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/chair_iso.png" title="Isometric View" class="img-fluid rounded z-depth-1" %}
+    </div>
 </div>
-```
+<div class="caption">
+    Left: The side view of the final rendered design. Middle: The front view of the final rendered design. Right: The isometric view of the final rendered design.
+</div>
 
-{% endraw %}
+
+### Kinematic Analysis
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/platform_kin.png" title="Platform Kinematics" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    The kinematic analysis of the top platform for the scissor lift design.
+</div>
+
+The kinematic analysis focused on ensuring smooth and controlled motion for the lift platform. By using vector equations, the position, velocity, and acceleration of the platform’s center of mass were derived as functions of time. This approach confirmed that the lift meets velocity and acceleration limits of 0.158 m/s and 0.159 m/s², respectively, ensuring user safety and comfort. A MATLAB simulation demonstrated the platform’s predictable movement trajectory, which minimizes any abrupt changes during operation.
+
+Key insights include:
+<ul>
+    <li>The lift’s movement follows a stable vertical trajectory, with minimal horizontal deviation.</li>
+    <li>The mechanism maintains a horizontal platform orientation throughout the motion cycle, complying with ADA requirements.</li>
+</ul>
+
+### Kinetics and Failure Analysis
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/chair_fail.png" title="Platform Failure" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    The kinetic and failure analysis of the scissor lift design.
+</div>
+
+The kinetics analysis evaluated the forces, moments, and stresses acting on the lift components to ensure structural integrity. Using free-body diagrams and equilibrium equations, the team identified high-stress areas, particularly at the central pin and bearing locations. The analysis revealed the following:
+
+<ul>
+    <li>
+        <strong>Stress Distribution:</strong> The maximum stresses occur at the center of the linkage due to bending moments. This necessitated using 202 annealed stainless steel for its high yield strength (260 MPa).
+    </li>
+    <li>
+        <strong>Load Capacity:</strong> Bearings and shafts were selected to exceed the maximum static and dynamic loads, ensuring durability.
+    </li>
+    <li>
+        <strong>Safety Factor:</strong> A safety factor of 2 was applied to all critical components to accommodate unexpected loads and material inconsistencies.
+    </li>
+</ul>
+
+### Conclusion
+
+The "Chairway to Heaven" lift is a testament to engineering innovation and user-centric design. By leveraging advanced analysis tools and iterative refinement, the project delivers a solution that enhances accessibility and independence for individuals with mobility challenges. This lift not only bridges physical gaps but also paves the way for more inclusive residential spaces.

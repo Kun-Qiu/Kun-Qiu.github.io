@@ -9,6 +9,8 @@ category: Academic
 
 Have you wonder how effective is thermoelectric in rejecting heat from an enclosed space? Currently, commericially available thermoelectric have an efficiency of approximately 5 to 6 percent. One of my favorite drink is Coca-Cola, and I occasionally wonders if there exists portable cooler where you could cool the soft drinks. In this project, I will provide a simulation of the cooling effect of thermoelectric device with COMSOL, numerical simulation with MATLab, and experimental data. For the COMSOL specifically, two configurations of cooling (vertical and horizontal can) are simulated to determine which method is better for cooling. 
 
+### Computational Setup
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/Vert_Can.png" title="Vertical Can" class="img-fluid rounded z-depth-1" %}
@@ -75,6 +77,8 @@ The material properties of all the material included in the simulation is shown 
 </div>
 
 ---
+### Theoretical Foundation
+
 Before devling into the results of the simulation, let us discuss the governing equation of the interactions between the Coca-Cola can and the thermoelectric device. In addition, the Coca-Cola is assumed to be a solid with a material properties similar to that of water. Within the Coca-Cola can, the heat transfer is governed by the 3D heat equation:
 
 $$
@@ -96,6 +100,8 @@ $$
 $$
 
 ---
+
+### COMSOL Results
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -129,6 +135,8 @@ The maximum velocity for the standing and horizontal configurations are 0.141 m/
 
 ---
 
+### MATLab Numerical Studies
+
 For the numerical study, the surface temperature on the Coca-Cola is obtained using the lumped capacitane model. It is assumed that the heat transfer coefficient, denoted by h, remains constant throughout the operation of the device.
 
 $$
@@ -142,6 +150,8 @@ $$
 Here $$T_s(t)$$ represents the surface temperature, $$T_{\inf}$$ represents the ambient temperature, h represent the heat transfer coefficient, and $$A_s$$ represents the surface aera.  
 
 ---
+
+### Numerical Results
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -184,6 +194,8 @@ Here $$T_s(t)$$ represents the surface temperature, $$T_{\inf}$$ represents the 
 
 At the three-hour mark, the internal temperature of the Coca-Cola can remains 15 degrees Celsius. As the cooling time increases to the five-hour mark, majority of the can reachs a 10 degrees Celsius except for the bottom left corner. To fully reach the desired 5 degree Celsius, it will require 10 hours of cooling at a constant heat flux of -5W. For the experimental section of the fluid simulation, the thermoelectric device is enclosed in a "perfectly thermal isolated" environment where the cold side of device is expose to the air inside and the hot side facing the ambient environment.  
 
+### Experimental Results
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/Experiment_Heat.jpg" title="Experimental Setup" class="img-fluid rounded z-depth-1" %}
@@ -196,13 +208,15 @@ At the three-hour mark, the internal temperature of the Coca-Cola can remains 15
     On the left, the exterior of the experimental setup. Right, the internal of the experimental setup with the thermal insulation.
 </div>
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+<div class="row justify-content-sm-center">
+    <div class="col-sm-8 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/Experiment_Heat_Result.png" title="Experimental Result" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
     The experimental result over an hour of data recording. 
 </div>
+
+### Conclusion
 
 This study investigated the efficiency of a closed-system cooling device utilizing the Seebeck effect of a thermoelectric device (TED) through COMSOL simulation, numerical modeling, and experimental analysis. The results revealed that the horizontal configuration of the cooling system outperforms the standing configuration, achieving a temperature approximately 12.5% lower, highlighting the importance of system orientation in TED-based cooling devices. Despite this, the study also identified the limitations of thermoelectric cooling for beverage applications, with prolonged cooling times and inefficiencies in heat extraction indicating a need for further optimization. While TED-based cooling shows promise, its performance currently lags behind conventional cooling methods, offering opportunities for future improvements and innovations in thermoelectric cooling technology.

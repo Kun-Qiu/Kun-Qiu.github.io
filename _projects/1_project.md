@@ -8,7 +8,11 @@ category: Academic
 related_publications: false
 ---
 
+### Introduction
+
 Molecular Tagging Velocimetry (MTV) is a powerful flow measurement technique particularly well-suited for high-speed flows, where traditional methods like Particle Image Velocimetry (PIV) face significant limitations. Unlike PIV, which relies on seeding the flow with tracer particles, MTV directly tags nascent molecular species within the fluid. This eliminates the issue of inertial drag that causes tracer particles to lag behind flow at supersonic and hypersonic speeds. By capturing the displacement of tagged molecules over time, MTV can accurately measure velocity fields without introducing foreign particles, ensuring precision even in extreme flow conditions.
+
+### Governing Theory
 
 To extend MTV's capability from two-dimensional to three-dimensional velocity measurements, a stereoscopic MTV (sMTV) setup is employed. This approach utilizes two cameras positioned at different angles to observe the same region of interest, enabling the capture of out-of-plane flow components that are otherwise unresolvable in 2D MTV. The stereoscopic setup introduces depth perception by analyzing the disparity between the two images, which is mapped from image to the object plane through polynomial based geometric calibration
 
@@ -22,6 +26,8 @@ $$
 Here, $$A_{i,j,k}$$ represents the polynomial coefficients, while (x, y, z) denote the spatial coordinates in the object plane.
 
 ---
+
+### Calibration Process
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -53,6 +59,8 @@ Using nonlinear least square methods, the transformation coefficients in the Sol
 velocity schematic, the gradient of the Soloff polynomial is determined and used to resolve the 3D velocity field with
 two set of 2D velocity fields.
 
+### 3D Velocity Field Reconstruction
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/Proj_Error.png" title="projection Error" class="img-fluid rounded z-depth-1" %}
@@ -65,9 +73,9 @@ two set of 2D velocity fields.
     On the left, the projection error of the object onto the image plane. On the right, the root mean square error of object to image plane projection. 
 </div>
 
-The forward projection of the object to image plane shows great agreement between across all calibration samples which is to be expected.
-The root mean square error of the projection falls under 0.1 for x and y projection and 0.14 for the z projection. Since there are less
-sample points in the z axis, it is reasonable for the error to be greater than the x and y axis. 
+### Evaluation
+
+The forward projection of the object to image plane shows great agreement between across all calibration samples which is to be expected. The root mean square error of the projection falls under 0.1 for x and y projection and 0.14 for the z projection. Since there are less sample points in the z axis, it is reasonable for the error to be greater than the x and y axis. 
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -94,14 +102,13 @@ From the experimental result, Soloff polynomial based 3D reconstruction have a r
 experimentation, it is concluded that the method described in the post provide a sufficiently accurate method to extract 3D velocity
 information from two sets of 2D velocity information. The method assumes: 1. the provided 2D velocity information is accurate and 2.there exist no alignment issues during the calibration process due to the inperfection in alignment with the actual laser sheet. One possible method to avoid the misalignment issues is to use the laser sheet itself as the calibration target.
 
-{% raw %}
+### Conclusion
+Molecular Tagging Velocimetry combined with stereoscopic techniques offers a robust and accurate approach for measuring 3D velocity fields in high-speed flows. The use of the Soloff polynomial for geometric calibration ensures precise mapping between object and image planes, enabling reliable velocity reconstruction. The evaluation of projection errors and root mean square errors demonstrates that the method achieves high accuracy, with bounded error ranges for 3D displacement. While the approach relies on accurate 2D velocity data and careful alignment during calibration, incorporating the laser sheet as a calibration target could further mitigate alignment challenges. This study underscores the potential of stereoscopic MTV as a valuable tool for advanced flow diagnostics, particularly in extreme flow conditions.
 
-```html
+### References
+[1] Bohl, D. G., Koochesfahani, M. M., & Olson, B. J. (2001). Development of stereoscopic molecular tagging velocimetry. *Experiments in Fluids*, 30(3), 302–308.
 
-References:
-[1] D. G. Bohl, M. M. Koochesfahani, and B. J. Olson, “Development of stereoscopic molecular tagging velocimetry,” vol. 30, no. 3, pp. 302–308, 2001.
-[2] DPavlík, P Procházka, and V Kopecký, “Reconstruction of three-dimensional velocity vector maps from two-dimensional PIV data”, J. Phys.: Conf. Ser.760 012020.
-[3] Ramsey, M.C., Pitz, R.W. Template matching for improved accuracy in molecular tagging velocimetry. Exp Fluids 51, 811–819 (2011). https://doi.org/10.1007/s00348-011-1098-y
+[2] Pavlík, D., Procházka, P., & Kopecký, V. (2016). Reconstruction of three-dimensional velocity vector maps from two-dimensional PIV data. *Journal of Physics: Conference Series*, 760, 012020. https://doi.org/10.1088/1742-6596/760/1/012020
 
-```
-{% endraw %}
+[3] Ramsey, M. C., & Pitz, R. W. (2011). Template matching for improved accuracy in molecular tagging velocimetry. *Experiments in Fluids*, 51, 811–819. https://doi.org/10.1007/s00348-011-1098-y
+

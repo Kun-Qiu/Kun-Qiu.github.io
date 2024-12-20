@@ -17,14 +17,14 @@
   },
   "work": [
     {
-      "name": "Vadnerbilt University",
+      "name": "Vanderbilt University",
       "position": "Comustion and Laser Diagnostic Lab Research Assistant",
       "startDate": "2023-01-01",
       "endDate": "Present",
       "summary": "Research assistant in charge of developing new technique for velocity measurement using molecular tagging velocimetry.",
       "highlights": ["High Speed Flow", "Image Processing"]
     }, {
-      "name": "Vadnerbilt University",
+      "name": "Vanderbilt University",
       "position": "Miniature Robotics Lab Research Assistant",
       "startDate": "2022-09-01",
       "endDate": "2023-01-01",
@@ -129,12 +129,47 @@
   ],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
+      "name": "3D Molecular Tagging Velocimetry",
+      "summary": "Molecular tagging velocimetry with stereoscopic imaging setup for 3D velocity field reconstruction using calibration based method.",
+      "highlights": ["3D Reconstruction", "High Speed Flow", "Stereoscopic Vision", "Computer Vision", "Calibration"],
+      "startDate": "2024-06-01",
+      "endDate": "2024-08-22",
+      "url": "https://github.com/Kun-Qiu/Stereoscopic_MTV"
+    } , {
+      "name": "2D Molecular Tagging Velocimetry",
+      "summary": "Developing 2D algorithms for feature detection in the molecular tagging velocimetry.",
+      "highlights": ["Computer Vison", "High Speed Flow", "Stereoscopic Vision", "Scale and Rotational Invariant"],
+      "startDate": "2023-01-01",
+      "endDate": "",
+      "url": "https://github.com/Kun-Qiu/MTV_2D"
+    } , {
+      "name": "Thermofluid interaction between Thermoelectric and Can Cooler Device",
+      "summary": "Analysis of the effectiveness of thermoelectric device as method of cooling.",
+      "highlights": ["Heat Transfer", "Thermoelectric Device", "COMSOL", "Finite Volume Method"],
+      "startDate": "2023-01-01",
+      "endDate": "2023-05-10",
+      "url": "https://github.com/Kun-Qiu/Heat_Transfer_Soda_Can"
+    } , {
+      "name": "Force Detection for Biological Adhesive",
+      "summary": "Effectiveness of various biological adhesive through automated characterization of adhesion and frictional forces.",
+      "highlights": ["Cantilever Beam", "Force Measurement", "Bio-Adhesive", "Computer Vision"],
+      "startDate": "2022-09-01",
+      "endDate": "2023-01-1",
+      "url": "https://vanderbilt.box.com/v/adhesion-force"
+    } , {
+      "name": "Wheelchair to Heaven",
+      "summary": "Design and devlope a wheel chair lift mechanism.",
+      "highlights": ["Linkage", "Kinematic and Kinetic Analysis", "Standards"],
+      "startDate": "2022-10-01",
+      "endDate": "2023-12-03",
+      "url": "https://drive.google.com/drive/folders/16hUCLHRBxlKm0elSGqxEW1Z2Tdz2uIHH?usp=sharing"
+    } , {
+      "name": "Solar Panel Rotational Platform",
+      "summary": "Design and devlope a platform that maximize the sun exposure duration on the solar panel.",
+      "highlights": ["Mechatronic", "Arduino", "Design"],
+      "startDate": "2024-2-01",
+      "endDate": "2024-5-01",
+      "url": "https://drive.google.com/drive/folders/11MNnUz72DrseC5zhVAdTKi2s4UQKMIeH?usp=sharing"
     }
-  ]
+  ] 
 }
