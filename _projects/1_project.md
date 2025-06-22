@@ -91,15 +91,14 @@ The forward projection of the object to image plane shows great agreement betwee
         {% include figure.liquid loading="eager" path="assets/img/Displacement_Table.png" title="3D Displacement" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Relative Error Contour.png" title="Error Contour" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/Relative_Error_Contour.png" title="Error Contour" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
     On the left, the 3D displacement is resoved using the Soloff polynomial. On the right, the relative error of the 3D displacement is resolved. 
 </div>
 
-From the experimental result, Soloff polynomial based 3D reconstruction have a range of error bounded by (-0.08, 0.06). From further
-experimentation, it is concluded that the method described in the post provide a sufficiently accurate method to extract 3D velocity
+From the experimental result, Soloff polynomial based 3D reconstruction have a range of error bounded by (-0.08, 0.06). From further experimentation, it is concluded that the method described in the post provide a sufficiently accurate method to extract 3D velocity
 information from two sets of 2D velocity information. The method assumes: 1. the provided 2D velocity information is accurate and 2.there exist no alignment issues during the calibration process due to the inperfection in alignment with the actual laser sheet. One possible method to avoid the misalignment issues is to use the laser sheet itself as the calibration target.
 
 ### Conclusion
