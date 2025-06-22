@@ -1,4 +1,5 @@
 ---
+encoding: utf-8
 layout: page
 title: Finite Difference Method
 description: Computational fluids dynamic with finite difference method on the heat equation
